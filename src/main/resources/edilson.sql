@@ -1,0 +1,2 @@
+INSERT INTO tb_user (id, nome, email, telefone, senha, serialVersionUID) VALUES (13333, 'Edilson Souza', 'edilsonfsp@gmail.com', '1234', '123', 2343545345454);
+INSERT INTO tb_user (id, nome, email, telefone, senha, serialVersionUID) VALUES (23333, 'Magda Souza', 'magdanbsouza@gmail.com', '7630', '123', 1234565544333);
