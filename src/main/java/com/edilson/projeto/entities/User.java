@@ -38,34 +38,34 @@ public class User implements Serializable {
     @Column(name = "senha")
     private String senha;
     
-	public Integer get_id() {		
+	public Integer getId() {		
 		return id;
 	}
-	public void set_id(Integer id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
-	public String get_nome() {
+	public String getNome() {
 		return nome;
 	}
-	public void set_nome(String nome) {
+	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	public String get_email() {
+	public String getEmail() {
 		return email;
 	}
-	public void set_email(String email) {
+	public void setEmail(String email) {
 		this.email = email;
 	}
-	public String get_telefone() {
+	public String getTelefone() {
 		return telefone;
 	}
-	public void set_telefone(String telefone) {
+	public void setTelefone(String telefone) {
 		this.telefone = telefone;
 	}
-	public String get_password() {
+	public String getPassword() {
 		return senha;
 	}
-	public void set_password(String senha) {
+	public void setPassword(String senha) {
 		this.senha = senha;
 	}
 
