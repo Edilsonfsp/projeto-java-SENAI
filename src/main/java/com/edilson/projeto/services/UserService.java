@@ -36,12 +36,12 @@ public class UserService {
         
     }
 
-    public User update(User user, Integer id) {
+    public User update(User obj, Integer id) {
 		User newObj = findById(id);
-		newObj.setNome(newObj.getNome());
-		newObj.setEmail(newObj.getEmail());
-		newObj.setPassword(newObj.getPassword());
-		return repository.save(newObj);	
+		newObj.setNome(obj.getNome());
+		newObj.setEmail(obj.getEmail());
+		newObj.setPassword(obj.getPassword());
+		return repository.save(obj);	
 
     }
 
@@ -50,7 +50,7 @@ public class UserService {
 		obj.setId(null);
 		
 		return repository.save(obj);
-        
+
     }
     
 }

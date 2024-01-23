@@ -53,10 +53,12 @@ public class UserResource {
     }
 
     @PutMapping(value = "/{id}")
-    public void update(@RequestBody User user, @PathVariable Integer id) {
+    public ResponseEntity<User> update(@RequestBody User obj, @PathVariable Integer id) {
 
-        // Certifique-se de que o objeto 'user' contenha todas as informações necessárias para a atualização.
-        service.update(user, id);
+        // Certifique-se de que o objeto 'obj' contenha todas as informações necessárias para a atualização.
+		
+		User newObj = service.update(obj, id);
+		return ResponseEntity.ok().body(newObj);
 
     }
 
